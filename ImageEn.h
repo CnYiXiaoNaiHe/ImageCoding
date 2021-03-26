@@ -1,5 +1,7 @@
 #pragma once
-
+/*
+From:   YiXiaoNaiHe
+*/
 #include <QtWidgets/QWidget>
 #include "ui_ImageEn.h"
 #include<QDebug>
@@ -44,13 +46,13 @@ public:
 	AVFormatContext *ic = NULL;
 	AVFrame *yuv = NULL;
 	AVFrame *Twoyuv = NULL;
-	SwsContext *cCtx = NULL;  //×ª»»ºóµÄ¿Õ¼ä
-	AVFrame *rgbFrame = NULL; //QImageÍ¼Ïñ´æÈë
+	SwsContext *cCtx = NULL;  //×ªï¿½ï¿½ï¿½ï¿½Ä¿Õ¼ï¿½
+	AVFrame *rgbFrame = NULL; //QImageÍ¼ï¿½ï¿½ï¿½ï¿½ï¿½
 	AVFrame *Frameyuv = NULL;
-	AVCodec *Encodec = NULL;  //±à½âÂëÆ÷1
-	AVCodec *ABC = NULL;  //±à½âÂëÆ÷2
-	AVCodecContext *Enc = NULL; //±àÂëµÄ
-	AVCodecContext *toImageEnc = NULL; //½âÂëµÄ
+	AVCodec *Encodec = NULL;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1
+	AVCodec *ABC = NULL;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2
+	AVCodecContext *Enc = NULL; //ï¿½ï¿½ï¿½ï¿½ï¿½
+	AVCodecContext *toImageEnc = NULL; //ï¿½ï¿½ï¿½ï¿½ï¿½
 	SwsContext *SWSctx = NULL;
 	uint8_t* buffer1 = NULL;
 	uint8_t* buffer2 = NULL;
